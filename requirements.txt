@@ -1,0 +1,7 @@
+discord.py
+aiohttp
+requests
+flask
+django
+numpy
+pandas
