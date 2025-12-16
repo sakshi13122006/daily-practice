@@ -1,0 +1,68 @@
+"""********** Decision Making Statement ********"""
+
+# Rock Paper scissor game
+
+import random
+
+choices = ["rock", "paper", "scissors"]
+user = input("Enter rock, paper or scissors : ").lower()
+computer = random.choice(choices)
+
+print("You chose : ",user)
+print("Computer chose : ",computer)
+
+if computer == user:
+    print("Tie")
+elif (
+       (user == "rock" and computer == "scissors") or
+       (user == "scissors"and computer == "paper") or 
+       (user == "paper" and computer == "rock")
+     ):
+           print("Congratulations!!! You win!!!")
+elif (
+      (computer == "rock" and user == "scissors") or
+      (computer == "scissors" and user == "paper") or
+      (computer == "paper" and user == "rock")
+):
+      print("Computer win!!!")
+   
+else:
+    print("Invalid input...")
+
+
+
+ # Grade detector
+"""
+
+ Marks = int(input("Enter Your Marks: "))
+
+  if Marks >= 90:
+    print("Your Grade is 'A'")
+ elif Marks >= 75:
+     print("Your Grade is 'B'")
+ elif Marks >= 55:
+     print("YOur Grade is 'C'")
+ elif Marks >= 35:
+     print("Your Grade is 'D'")
+ else:
+     print("You are Fail")
+
+     """
+
+
+
+# Ticket price
+"""
+
+ age = int(input("Enter Your Age : "))
+
+ if age <= 5:
+    print("Free Entry")
+ elif age <= 18:
+     print("Ticket price is 100 rs")
+ elif age <= 60:
+     print("Ticket price is 200 rs")
+ else:
+     print("Free entry to Senior Citizen")
+
+"""
