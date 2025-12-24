@@ -216,40 +216,89 @@ stud_info("Ashu") '''
 
 
 # simple menu driven program
-while True:
-     print("\n******menu driven program******")
-     print("1. Add")
-     print("2. Sub")
-     print("3. Multiply")
-     print("4. divide")
-     print("5. Exit")
+# while True:
+#      print("\n******menu driven program******")
+#      print("1. Add")
+#      print("2. Sub")
+#      print("3. Multiply")
+#      print("4. divide")
+#      print("5. Exit")
 
-     choice = input("Enter your choice(1-5): ")
+#      choice = input("Enter your choice(1-5): ")
 
-     if choice == '5':
-          print("Exiting the program")
-          break
+#      if choice == '5':
+#           print("Exiting the program")
+#           break
      
-     elif choice in ('1','2','3','4','5'):     
-      num1 = float(input("Enter First number : "))
-      num2 = float(input("Enter second number: "))
+#      elif choice in ('1','2','3','4','5'):     
+#       num1 = float(input("Enter First number : "))
+#       num2 = float(input("Enter second number: "))
 
-      if choice == '1':
-        print("Result: ",num1+num2)
+#       if choice == '1':
+#         print("Result: ",num1+num2)
 
-      elif choice == '2':
-        print("Result: ",num1-num2)
+#       elif choice == '2':
+#         print("Result: ",num1-num2)
 
-      elif choice == '3':
-        print("Result: ",num1*num2)
+#       elif choice == '3':
+#         print("Result: ",num1*num2)
 
-      elif choice == '4':
-         if num2 != 0:
-             print("Result: ",num1/num2)
-         else:
-          print("Cannot divide by Zero")
+#       elif choice == '4':
+#          if num2 != 0:
+#              print("Result: ",num1/num2)
+#          else:
+#           print("Cannot divide by Zero")
 
-      else:
-         print("Invalid choice please enter (1-5)")
+#       else:
+#          print("Invalid choice please enter (1-5)")
           
      
+
+# def check_max(a ,b):
+#     if a > b:
+#         return "a is greater"
+#     elif b > a:
+#         return "b is greater"
+#     else:
+#         return "both numbers are equal"
+
+# num1 = int(input("Enter 1st number: "))
+# num2 = int(input("Enter 2nd number: "))
+
+
+# print(check_max(num1,num2))
+
+# def interest(p ,r, t):
+#     si = ( p * r * t)  /100
+#     return si
+
+# print(interest(10,20,30))
+
+# def sum(n):
+#     total = 0
+#     for i in range (1,n+1):
+#         total += i
+#     return total
+
+# print(sum(5))
+
+
+# def math(a,b):
+#     return a + b , a - b, a * b, a / b 
+
+# add,sub,mul,div = math(4,2)
+# print(add, sub, mul,div)
+
+
+def typeprint(value):
+    print("Value: ",value)
+    print("Type: ",type(value))
+
+    # typeprint(10)
+    # typeprint(2.0)
+    # typeprint("Sakshi")
+    # typeprint(True)
+
+value = input("Enter value to get type: ")
+typeprint(value)
+    
